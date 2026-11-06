@@ -1,0 +1,61 @@
+/* 
+  ÇÓã ÇáãÔÑæÚ: Ïáíá İÚÇáíÇÊ ÇáÌÇãÚÉ ÇáÇİÊÑÇÖíÉ (SVU Events Guide)
+  ÅÚÏÇÏ ÇáØÇáÈ: ãÔÑæÚ ÊÎÑÌ / ãŞÑÑ ÊØæíÑ ÇáæíÈ
+  æÕİ Çáãáİ: ÇáÊäÓíŞÇÊ ÇáãÎÕÕÉ¡ ÇáåæíÉ ÇááæäíÉ¡ ÏÚã ÇáæÖÚ ÇáãÙáã¡ æÇáÎØæØ.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+}
+
+/* ÇáæÖÚ ÇáãÙáã (Bonus) */
+[data-theme="dark"] {
+  --primary-color: #3d8bfd;
+  --secondary-color: #adb5bd;
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  direction: rtl;
+  text-align: right;
+}
+
+/* ÊäÓíŞ ÇáäÇİÈÇÑ */
+navbar, .navbar {
+  background-color: var(--card-bg) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ÈØÇŞÇÊ ÇáİÚÇáíÇÊ */
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ÒÑ ÇáÚæÏÉ ááÃÚáì (Bonus) */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  z-index: 99;
+}
